@@ -110,7 +110,8 @@ body {
 
 .fenixlogo:hover {
     scale: 1.1;
-    transition: 1s;
+    transform: rotateY(360deg);
+    transition: .6s;
 }
 
 
@@ -228,6 +229,11 @@ body {
     padding: 10px;
 }
 
+.tecnologias img:hover {
+    scale: 1.1;
+    transform: rotateY(360deg);
+    transition: .4s;
+}
 
 
 /*** FOOTER ***/
