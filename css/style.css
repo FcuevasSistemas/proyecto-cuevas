@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto:wght@300;400;700&display=swap');
+
+/* ROOT */
+:root {
+    --gold1: #f4bd76;
+    --gold2: #f6cd8f;
+    --gray: #ffffff80;
+    --gray2: #f7d9d990;
+    --black1: #1a1b1f;
+    --black2: #30353b;
+    --shadow: 0 8px 8px;
+    --color_shadow: #00000033;
+
+}
+
+
+/* GENERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/**** ESTILOS NAV ****/
+
+
+.hero {
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+}
+.nav_hero {
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+
+            .hero {
+                height: 180px;
+                
+            }
+            .nav_container {
+                display: flex;
+                margin: auto;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                
+            }
+            .logo {
+                position: relative;
+                padding-left: 40px;
+            }
+
+            .contact_title {
+                display: flex;
+                max-height: 100%;
+            }
+            
+            
+}
+
+@media screen and (max-width: 800px) {
+
+    .hero {
+        height: 180px;
+        
+    }
+    .nav_container {
+                display: flex;
+                margin: auto;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+    }
+    
+
+    .contact_title {
+        display: flex;
+        max-height: 100%;
+    }
+
+    
+}
+
+
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+
+.logo {
+    position:relative;
+    padding-left: 40px;
+}
+
+.fenixlogo {
+    width: 65px;
+}
+
+.fenixlogo:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+
+
+.link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+
+.link:hover {
+    color: var(--gold1);
+    transform: scale(1.1);
+    transition: 1s;  
+}
+
+.link--active {
+    text-decoration: none;
+    color: var(--gold1);
+    font-weight: 800;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.point {
+    color: var(--gold1);
+}
+
+/* ******** INDEX SECTION ********* */
+
+.indexsection {
+    background-image: url("../imagenes/fondo6.jpg");
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 150vh;
+
+}
+
+.title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.title_active {
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: var(--shadow) var(--color_shadow);
+}
+
+.copy_active {
+    font-weight: 700;
+    color: #fff;
+}
+
+
+
+.hero_textos {
+    display: flex;
+    text-align: center;
+    padding-top: 600px;
+    padding-left: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+    }
+
+    .hero_textos {
+        display: flex;
+        text-align: center;
+        padding-top: 200px;
+        }
+
+    .indexsection {
+        background-image: url("../imagenes/fondo6.jpg");
+        background-size: cover;
+        background-position: center;
+        width: auto;
+        height: 100vh;
+    }
+}
+
+.tecnologias {
+    display: inline-block;
+    position: absolute;
+    left: 760px;
+    top: 1300px;
+    margin: auto;
+    text-align: center;
+}
+
+.tecnologias h3 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.tecnologias img {
+    width: 80px;
+    padding: 10px;
+}
+
+
+
+/*** FOOTER ***/
+
+.div_footer {
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;
+    justify-content: space-between;
+    align-content: center;
+    height: 70px;
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+    color: #fff
+}
+
+.item_footer {
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+    
+}
+
+div i {
+    font-size: 24px;
+    color: var(--gold1);
+}
+
+i:hover {
+    scale: 1.2;
+    transition: .5s;
+}
+
+/* ********* STYLES CV ********* */
+
+.cvmain {
+    background: linear-gradient(180deg, #131516 0%, #000000 100%);
+    height: 130vh;
+    overflow: auto;
+    
+}
+
+.content-cabecera {
+        width: 100%;
+        text-align: center;
+
+}
+
+.content-logo {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.content-logo img {
+    padding-top: 20px;
+    width: 150px
+}
+
+.content-cabecera h1 {
+    top: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.cvpoint {
+    color: var(--gold1);
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 2fr);
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.divcontacto {
+    padding-bottom: 20px;
+    
+}
+
+.cvul {
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    border-bottom: solid 2px var(--gold1);
+    border-top: solid 2px var(--gold1);
+}
+
+.cvdiveducacion {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.uleducacion {
+    border-radius: 10px;
+    border-bottom: solid 2px var(--gold1);
+    border-top: solid 2px var(--gold1);
+}
+
+.ulhabilidades {
+    border-radius: 10px;
+    border-bottom: solid 2px var(--gold1);
+    border-top: solid 2px var(--gold1);
+
+}
+
+.cvdivhabilidades {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ulintereses {
+    border-radius: 10px;
+    border-bottom: solid 2px var(--gold1);
+    border-top: solid 2px var(--gold1);
+}
+
+.cvdivintereses {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tecnologiascv img {
+    width: 60px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+
+    .content-cabecera h1 {
+        padding-top: 30px;
+    }
+
+    .content1 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .divcontacto {
+            margin-right: 400px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+    }
+
+    .cvdiveducacion {
+            margin-left: 400px;
+            padding-top: 50px;
+            padding-right: 15px;
+    }
+
+    .cvdivhabilidades {
+        margin-right: 400px;
+        padding-top: 50px;
+        padding-left: 15px;
+    }
+
+    .cvdivintereses {
+        margin-left: 400px;
+        padding-top: 100px;
+        padding-right: 15px;
+    }
+}
+
+.tecnologiascv {
+    margin-top: 20px;
+}
+
+.tecnologiascv h3 {
+    font-size: 20px;
+}
+
+.tecnologiascv img {
+    width: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .content-cabecera h1 {
+        padding-top: 30px;
+    }
+
+    .content1 {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        
+    }
+
+    .divcontacto {
+            margin-right: 800px;
+            padding-top: 60px;
+
+    }
+
+    .cvdiveducacion {
+            margin-left: 800px;
+            padding-top: 60px;
+    }
+
+    .cvdivhabilidades {
+        margin-right: 800px;
+        padding-top: 60px;
+    }
+
+    .cvdivintereses {
+        margin-left: 800px;
+        padding-top: 60px;
+    }
+}
+
+.tecnologiascv {
+    padding-top: 30px;
+}
+
+.tecnologiascv h3 {
+    font-size: 30px;
+}
+
+.tecnologiascv img {
+    width: 90px;
+    padding: 10px;
+}
+
+
+
+/* ******** STYLES SOBRE MI ******** */ 
+
