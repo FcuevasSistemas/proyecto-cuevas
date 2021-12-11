@@ -19,6 +19,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 body {
@@ -32,19 +33,21 @@ body {
     background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
 }
 .nav_hero {
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
     color: #fff;
-    height: 70px;
+    height: 140px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (max-width: 600px) {
 
             .hero {
-                height: 180px;
+                height: 200px;
                 
             }
             .nav_container {
                 display: flex;
+                padding-right: 40px;
                 margin: auto;
                 text-align: center;
                 justify-content: center;
@@ -65,7 +68,7 @@ body {
             
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
 
     .hero {
         height: 180px;
@@ -105,7 +108,8 @@ body {
 }
 
 .fenixlogo {
-    width: 65px;
+    width: 70px;
+    padding-left: 30px;
 }
 
 .fenixlogo:hover {
@@ -151,7 +155,6 @@ body {
     background-image: url("../imagenes/fondo6.jpg");
     background-size: cover;
     background-position: center;
-    width: auto;
     height: 150vh;
 
 }
@@ -184,38 +187,17 @@ body {
 .hero_textos {
     display: flex;
     text-align: center;
-    padding-top: 600px;
-    padding-left: 20px;
+    padding-top: 500px;
+    padding-left: 10px;
     flex-direction: column;
-    align-items: flex-start;
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        height: 100vh;
-    }
-
-    .hero_textos {
-        display: flex;
-        text-align: center;
-        padding-top: 200px;
-        }
-
-    .indexsection {
-        background-image: url("../imagenes/fondo6.jpg");
-        background-size: cover;
-        background-position: center;
-        width: auto;
-        height: 100vh;
-    }
+    font-size: 12px;
 }
 
 .tecnologias {
     display: inline-block;
     position: absolute;
-    left: 760px;
-    top: 1300px;
-    margin: auto;
+    padding-left: 30px;
+    padding-top: 100px;
     text-align: center;
 }
 
@@ -225,7 +207,7 @@ body {
 }
 
 .tecnologias img {
-    width: 80px;
+    width: 70px;
     padding: 10px;
 }
 
@@ -235,6 +217,128 @@ body {
     transition: .4s;
 }
 
+@media screen and (min-width: 576px){
+
+    .body {
+        height: 100vh;
+    }
+
+    .tecnologias {
+        position: relative;
+        padding-left: 20px;
+        padding-top: 400px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .nav_hero {
+        height: 100px;
+    }
+
+    .tecnologias {
+        display: none;
+    }
+    .tecnologias img {
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav_container {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        padding-top: 25px;
+    }
+    
+    .nav_hero {
+        height: 100px;
+    }
+
+    .tecnologias {
+        display: none;
+    }
+
+    .hero_textos {
+        padding-top: 900px;
+    }
+}
+
+@media screen and (min-width: 1358px) {
+    .nav_container {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        padding-top: 25px;
+    }
+    
+    .nav_hero {
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+    color: #fff;
+    height: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tecnologias {
+        display: inline-block;
+        padding-top: 30px;
+    }
+
+    .divtecnologias {
+        padding-left: 350px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+.div_footer {
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;
+    height: 70px;
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+    color: #fff
+}
+
+.item_footer H3 {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_hero {
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+    color: #fff;
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav_container {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        padding-top: 25px;
+    }
+
+    .fenixlogo {
+        width: 80px;
+    }
+
+    .tecnologias {
+        padding-left: 430px;
+        padding-top: 550px;
+    }
+
+    .hero_textos {
+        display: flex;
+        text-align: left;
+        padding-top: 600px;
+        padding-left: 50px;
+    }
+}
+
+
 
 /*** FOOTER ***/
 
@@ -242,6 +346,7 @@ body {
     display: grid;
     grid-template-columns: 5fr 5fr 5fr;
     justify-content: space-between;
+    text-align: center;
     align-content: center;
     height: 70px;
     background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
@@ -265,6 +370,10 @@ i:hover {
     transition: .5s;
 }
 
+.item_footer h3 {
+    font-weight: 550;
+}
+
 /* ********* STYLES CV ********* */
 
 .cvmain {
@@ -277,6 +386,8 @@ i:hover {
 .content-cabecera {
         width: 100%;
         text-align: center;
+        padding-top: 10px;
+        padding-right: 50px;
 
 }
 
@@ -297,166 +408,101 @@ i:hover {
     color: #fff;
 }
 
-.cvpoint {
-    color: var(--gold1);
-}
-
-.content1 {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: repeat(4, 2fr);
-    justify-content: space-between;
-    color: #fff;
-    text-align: center;
-    font-weight: 700;
-    margin-top: 100px;
-}
-
-.divcontacto {
-    padding-bottom: 20px;
-    
-}
-
-.cvul {
-    text-align: center;
+.container_card {
+    max-width: 1200px;
     margin: auto;
-    border-radius: 10px;
-    border-bottom: solid 2px var(--gold1);
-    border-top: solid 2px var(--gold1);
+    margin-top: 200px;
+    color: #fff;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
 }
 
-.cvdiveducacion {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.card_father {
+    margin: 20px;
+
+}
+
+.card:hover {
+        transform: rotateY(180deg);
+
+}
+
+.card {
+    width: 400px;
+    height: 550px;
+    background: linear-gradient(180deg, #131516 0%, #000000 100%);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s;
     
 }
 
-.uleducacion {
+.card_front {
+    background-size: cover;
+}
+
+.card_front, 
+.card_back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
     border-radius: 10px;
-    border-bottom: solid 2px var(--gold1);
-    border-top: solid 2px var(--gold1);
+}
+
+.card_back {
+    transform: rotateY(180deg);
+}
+
+.bodycard_front {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    transform: translateZ(60px);
+    
+}
+
+.bodycard_back {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ulcontacto {
+    list-style: none;
+    text-align: center;
 }
 
 .ulhabilidades {
-    border-radius: 10px;
-    border-bottom: solid 2px var(--gold1);
-    border-top: solid 2px var(--gold1);
-
+    list-style: disc;
+    text-align: left;
 }
 
-.cvdivhabilidades {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.ulintereses {
-    border-radius: 10px;
-    border-bottom: solid 2px var(--gold1);
-    border-top: solid 2px var(--gold1);
-}
-
-.cvdivintereses {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.tecnologiascv img {
-    width: 60px;
-    padding: 10px;
-}
-
-@media screen and (min-width: 800px) {
-
-    .content-cabecera h1 {
-        padding-top: 30px;
-    }
-
-    .content1 {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        
-    }
-
-    .divcontacto {
-            margin-right: 400px;
-            padding-top: 20px;
-            padding-left: 15px;
-
-    }
-
-    .cvdiveducacion {
-            margin-left: 400px;
-            padding-top: 50px;
-            padding-right: 15px;
-    }
-
-    .cvdivhabilidades {
-        margin-right: 400px;
-        padding-top: 50px;
-        padding-left: 15px;
-    }
-
-    .cvdivintereses {
-        margin-left: 400px;
-        padding-top: 100px;
-        padding-right: 15px;
-    }
+.ulcontacto li a {
+    text-decoration: none;
 }
 
 .tecnologiascv {
-    margin-top: 20px;
-}
-
-.tecnologiascv h3 {
-    font-size: 20px;
-}
-
-.tecnologiascv img {
-    width: 80px;
-}
-
-@media screen and (min-width: 1024px) {
-
-    .content-cabecera h1 {
-        padding-top: 30px;
-    }
-
-    .content1 {
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        
-    }
-
-    .divcontacto {
-            margin-right: 800px;
-            padding-top: 60px;
-
-    }
-
-    .cvdiveducacion {
-            margin-left: 800px;
-            padding-top: 60px;
-    }
-
-    .cvdivhabilidades {
-        margin-right: 800px;
-        padding-top: 60px;
-    }
-
-    .cvdivintereses {
-        margin-left: 800px;
-        padding-top: 60px;
-    }
-}
-
-.tecnologiascv {
-    padding-top: 30px;
+    display: inline-block;
+    text-align: center;
+    padding-left: 750px;
+    padding-top: 100px;
 }
 
 .tecnologiascv h3 {
     font-size: 30px;
+    color: #fff;
 }
 
 .tecnologiascv img {
@@ -464,7 +510,29 @@ i:hover {
     padding: 10px;
 }
 
+/* ******** Proyectos ******** */ 
+
+.bodyproyecto {
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+}
 
 
-/* ******** STYLES SOBRE MI ******** */ 
+.navbar-expand-lg {
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+}
 
+
+#navbarNav a:hover {
+    color: antiquewhite;
+}
+
+.carousel-inner img {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.item_footer_proyectos h3 {
+    color: antiquewhite;
+    text-align: center;
+    justify-content: center;
+}
