@@ -26,128 +26,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/**** ESTILOS NAV ****/
 
-
-.hero {
-    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
-}
-.nav_hero {
-    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
-    color: #fff;
-    height: 140px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-@media screen and (max-width: 600px) {
-
-            .hero {
-                height: 200px;
-                
-            }
-            .nav_container {
-                display: flex;
-                padding-right: 40px;
-                margin: auto;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                
-            }
-            .logo {
-                position: relative;
-                padding-left: 40px;
-            }
-
-            .contact_title {
-                display: flex;
-                max-height: 100%;
-            }
-            
-            
-}
-
-@media screen and (min-width: 800px) {
-
-    .hero {
-        height: 180px;
-        
-    }
-    .nav_container {
-                display: flex;
-                margin: auto;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-    }
-    
-
-    .contact_title {
-        display: flex;
-        max-height: 100%;
-    }
-
-    
-}
-
-
-
-.nav_container {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    
-}
-
-.logo {
-    position:relative;
-    padding-left: 40px;
-}
-
-.fenixlogo {
-    width: 70px;
-    padding-left: 30px;
-}
-
-.fenixlogo:hover {
-    scale: 1.1;
-    transform: rotateY(360deg);
-    transition: .6s;
-}
-
-
-
-.link {
-    display: inline-block;
-    color: inherit;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 2px;
-}
-
-
-.link:hover {
-    color: var(--gold1);
-    transform: scale(1.1);
-    transition: 1s;  
-}
-
-.link--active {
-    text-decoration: none;
-    color: var(--gold1);
-    font-weight: 800;
-    padding: 10px;
-    font-size: 20px;
-}
-
-.point {
-    color: var(--gold1);
-}
 
 /* ******** INDEX SECTION ********* */
 
@@ -197,7 +76,7 @@ body {
     display: inline-block;
     position: absolute;
     padding-left: 30px;
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -226,7 +105,7 @@ body {
     .tecnologias {
         position: relative;
         padding-left: 20px;
-        padding-top: 400px;
+        padding-top: 500px;
     }
 
 }
@@ -238,9 +117,6 @@ body {
 
     .tecnologias {
         display: none;
-    }
-    .tecnologias img {
-        width: 80px;
     }
 }
 
@@ -327,7 +203,16 @@ body {
 
     .tecnologias {
         padding-left: 430px;
-        padding-top: 550px;
+        padding-top: 400px;
+        
+    }
+
+    .tecnologias img {
+        width: 80px;
+    }
+
+    .tecnologias h3 {
+        font-size: 28px;
     }
 
     .hero_textos {
@@ -405,7 +290,7 @@ i:hover {
 .content-cabecera h1 {
     top: 15px;
     font-weight: 700;
-    color: #fff;
+    color: antiquewhite;
 }
 
 .container_card {
@@ -510,10 +395,12 @@ i:hover {
     padding: 10px;
 }
 
+
 /* ******** Proyectos ******** */ 
 
 .bodyproyecto {
     background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+    overflow-y: auto;
 }
 
 
@@ -522,8 +409,16 @@ i:hover {
 }
 
 
+#navbarNav a,
+.buttonnav {
+    font-size: 20px;
+    color: #f4bd76;
+}
+
 #navbarNav a:hover {
     color: antiquewhite;
+    scale: 1.1;
+    transition: .5s;
 }
 
 .carousel-inner img {
@@ -536,3 +431,9 @@ i:hover {
     text-align: center;
     justify-content: center;
 }
+
+.mainproyectos {
+    
+    height: 120vh;
+}
+
