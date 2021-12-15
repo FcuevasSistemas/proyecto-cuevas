@@ -288,8 +288,13 @@ body {
     }
 
     .divtecnologias {
-        padding-left: 350px;
+        padding-left: 510px;
     }
+}
+
+.item_footer H3 {
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 1920px) {
@@ -326,7 +331,7 @@ body {
     }
 
     .tecnologias {
-        padding-left: 430px;
+        padding-left: 280px;
         padding-top: 550px;
     }
 
