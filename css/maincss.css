@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto:wght@300;400;700&display=swap");
+/* ROOT */
+:root {
+  --gold1: #f4bd76;
+  --gold2: #f6cd8f;
+  --gray: #ffffff80;
+  --gray2: #f7d9d990;
+  --black1: #1a1b1f;
+  --black2: #30353b;
+  --shadow: 0 8px 8px;
+  --color_shadow: #00000033;
+  --textcolor: beige; }
+
+/**** ESTILOS NAV ****/
+.nav_hero {
+  background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+  color: #fff;
+  height: 160px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .nav_hero .nav_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around; }
+    .nav_hero .nav_container .logo {
+      position: relative;
+      padding-left: 40px; }
+    .nav_hero .nav_container .fenixlogo {
+      width: 80px;
+      padding-left: 30px; }
+    .nav_hero .nav_container a {
+      display: inline-block;
+      color: inherit;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 2px; }
+      .nav_hero .nav_container a:hover {
+        color: var(--gold1);
+        transform: scale(1.1);
+        transition: 1s; }
+    .nav_hero .nav_container .point {
+      color: var(--gold1); }
+
+/* MEDIA QUERYS NAV */
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 220px; }
+  .nav_container {
+    display: flex;
+    padding-right: 40px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .logo {
+    position: relative;
+    padding-left: 40px; }
+  .contact_title {
+    display: flex;
+    max-height: 100%; } }
+
+@media screen and (min-width: 800px) {
+  .hero {
+    height: 180px; }
+  .nav_container {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .contact_title {
+    display: flex;
+    max-height: 100%; } }
+
+/* ESTILOS FOOTER */
+footer {
+  height: 50px; }
+
+.div_footer {
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr;
+  justify-content: space-between;
+  text-align: center;
+  align-content: center;
+  height: 60px;
+  background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+  color: #fff; }
+  .div_footer div {
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%); }
+    .div_footer div a {
+      font-size: 24px; }
+      .div_footer div a i, .div_footer div a img {
+        font-size: 24px;
+        color: var(--gold1); }
+
+/* GENERAL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif !important; }
+
+/* ******** INDEX SECTION ********* */
+.indexsection {
+  background-image: url("../imagenes/fondo6.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 150vh; }
+
+.title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px; }
+  .title .title_active {
+    color: var(--gold1);
+    font-weight: 700; }
+
+.copy {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: var(--shadow) var(--color_shadow); }
+
+.copy_active {
+  font-weight: 700;
+  color: #fff; }
+
+.hero_textos {
+  display: flex;
+  text-align: center;
+  padding-top: 500px;
+  padding-left: 10px;
+  flex-direction: column;
+  font-size: 12px; }
+
+.tecnologias {
+  display: inline-block;
+  position: absolute;
+  padding-left: 30px;
+  padding-top: 100px;
+  text-align: center; }
+  .tecnologias h3 {
+    font-size: 25px;
+    color: #fff; }
+  .tecnologias img {
+    width: 70px;
+    padding: 10px; }
+  .tecnologias img:hover {
+    scale: 1.1;
+    transform: rotateY(360deg);
+    transition: .4s; }
+
+/* MEDIA QUERYS INDEX */
+@media screen and (min-width: 576px) {
+  .tecnologias {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 400px; } }
+
+@media screen and (min-width: 768px) {
+  .nav_hero {
+    height: 100px; }
+  .tecnologias {
+    display: none; }
+  .tecnologias img {
+    width: 80px; } }
+
+@media screen and (min-width: 1024px) {
+  .nav_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 25px; }
+  .nav_hero {
+    height: 100px; }
+  .tecnologias {
+    display: none; }
+  .hero_textos {
+    padding-top: 900px; } }
+
+@media screen and (min-width: 1358px) {
+  .nav_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 25px; }
+  .nav_hero {
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+    color: #fff;
+    height: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .tecnologias {
+    display: inline-block;
+    padding-top: 30px; }
+  .divtecnologias {
+    padding-left: 510px; } }
+
+.item_footer H3 {
+  display: flex;
+  justify-content: center; }
+
+@media screen and (min-width: 1920px) {
+  .div_footer {
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;
+    height: 70px;
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+    color: #fff; }
+  .item_footer H3 {
+    display: flex;
+    justify-content: center; }
+  .nav_hero {
+    background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+    color: #fff;
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .nav_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 25px; }
+  .fenixlogo {
+    width: 90px; }
+  .tecnologias {
+    padding-left: 280px;
+    padding-top: 550px; }
+  .hero_textos {
+    display: flex;
+    text-align: left;
+    padding-top: 600px;
+    padding-left: 50px; } }
+
+/* INDEX CV */
+.cvmain {
+  background: linear-gradient(180deg, #131516 0%, #000000 100%);
+  height: 120vh;
+  overflow: auto; }
+  .cvmain .content-cabecera {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px; }
+    .cvmain .content-cabecera h1 {
+      top: 15px;
+      font-weight: 700;
+      color: #fff; }
+    .cvmain .content-cabecera span {
+      color: var(--gold1); }
+    .cvmain .content-cabecera img {
+      padding-top: 20px;
+      margin-right: 20px;
+      width: 150px; }
+
+.container_card {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  color: #fff;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.card_father {
+  margin: 20px; }
+
+.card:hover {
+  transform: rotateY(180deg); }
+
+.card {
+  width: 400px;
+  height: 550px;
+  background: linear-gradient(180deg, #131516 0%, #000000 100%);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s; }
+
+.card_front {
+  background-size: cover; }
+
+.card_front,
+.card_back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 10px; }
+
+.card_back {
+  transform: rotateY(180deg); }
+
+.bodycard_front {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  transform: translateZ(60px); }
+
+.bodycard_back {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ulcontacto {
+  list-style: none;
+  text-align: center; }
+
+.ulhabilidades {
+  list-style: disc;
+  text-align: left; }
+
+.ulcontacto li a {
+  text-decoration: none; }
+
+.tecnologiascv {
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px; }
+  .tecnologiascv h3 {
+    font-size: 20px;
+    color: #fff; }
+  .tecnologiascv img {
+    width: 60px;
+    padding: 10px; }
+
+@media screen and (min-width: 768px) {
+  .tecnologiascv {
+    padding-left: 280px; } }
+
+/*PROYECTOS*/
+.bodyproyecto {
+  background: linear-gradient(180deg, #33353b 0%, #1a1b1f 100%); }
+
+.navbar-expand-lg {
+  background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%); }
+
+.navbar-nav li a {
+  color: var(--gold1);
+  font-size: 18px; }
+  .navbar-nav li a:hover {
+    color: var(--gold2);
+    transform: scale(1.2);
+    transition: .5s; }
+
+.carousel-inner img {
+  width: 75%;
+  margin: 0 auto; }
+
+.item_footer h3 {
+  color: antiquewhite;
+  text-align: center;
+  justify-content: center; }
+
+.h2-proyectos,
+.ul-proyectos {
+  color: var(--textcolor); }
