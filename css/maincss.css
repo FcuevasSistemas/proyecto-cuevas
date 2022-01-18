@@ -31,7 +31,8 @@
       font-size: 2px; }
       .div_footer div a i, .div_footer div a img {
         font-size: 20px;
-        color: var(--gold1); }
+        color: var(--gold1);
+        padding-top: 10px; }
 
 /* GENERAL */
 * {
