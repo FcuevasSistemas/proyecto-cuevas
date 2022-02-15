@@ -39,7 +39,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif !important; }
+  font-family: 'Roboto', sans-serif !important; 
+}
+
+.bodyindex {
+  min-height: 100vh;
+}
 
 .navbar-toggler-icon {
   color: #fff; }
@@ -49,7 +54,12 @@
   background-image: url("../imagenes/fondo6.jpg");
   background-size: cover;
   background-position: center;
-  height: 150vh; }
+  height: 120vh; 
+}
+
+  body {
+    min-height: 100vh;
+  }
 
 .title {
   color: #fff;
@@ -121,7 +131,7 @@
   .hero_textos {
     padding-top: 900px; } }
 
-@media screen and (min-width: 1358px) {
+@media screen and (min-width: 1366px) {
   .nav_container {
     display: flex;
     align-items: center;
@@ -135,9 +145,16 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
   .tecnologias {
     display: inline-block;
-    padding-top: 30px; }
+    padding-top: 450px; }
   .divtecnologias {
-    padding-left: 510px; } }
+    padding-left: 650px; } }
+
+.hero_textos {
+  display: flex;
+  text-align: center;
+  padding-top: 250px;
+  padding-left: 10px;
+  flex-direction: column; }
 
 .item_footer H3 {
   display: flex;
@@ -168,8 +185,8 @@
     width: 50px;
     height: 50px; }
   .tecnologias {
-    padding-left: 230px;
-    padding-top: 550px; }
+    padding-left: 90px;
+    padding-top: 250px; }
   .hero_textos {
     display: flex;
     text-align: left;
@@ -288,24 +305,36 @@
 
 @media screen and (min-width: 320px) {
   .tecnologiascv {
-    padding-left: 5px;
+    padding-left: 20px;
     display: inline-block;
     text-align: center; } }
 
 @media screen and (min-width: 390px) {
   .tecnologiascv {
-    padding-left: 40px;
+    padding-left: 200px;
     display: inline-block;
     text-align: center; } }
 
 @media screen and (min-width: 768px) {
   .tecnologiascv {
-    padding-left: 230px; } }
+    padding-left: 240px; } }
 
 @media screen and (min-width: 1024px) {
   .tecnologiascv {
-    padding-left: 350px;
+    padding-left: 460px;
+    padding-top: 380px; } }
+
+@media screen and (min-width: 1280px) {
+  .tecnologiascv {
+    padding-left: 480px;
     padding-top: 300px; } }
+
+@media screen and (min-width: 1366px) {
+  .tecnologiascv {
+    padding-left: 750px;
+    padding-top: 300px; }
+    .tecnologiascv img {
+      width: 70px; } }
 
 @media screen and (min-width: 1920px) {
   .tecnologiascv {
@@ -383,7 +412,7 @@
 .body-contacto {
   background: linear-gradient(180deg, #131516 0%, #000000 100%); }
   .body-contacto .contacto-section {
-    height: 135vh; }
+    height: 150vh; }
 
 .formulario {
   color: #fff;
@@ -392,7 +421,7 @@
   margin-left: auto;
   margin-right: auto; }
   .formulario .logo {
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 10px;
     text-align: center;
     font-size: 2.5em;
@@ -439,7 +468,8 @@
 
 .agradecimiento {
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 20px; }
 
 /*MEDIA QUERY CONTACTO*/
 @media screen and (min-width: 1920px) {
@@ -448,14 +478,23 @@
     .formulario h1 {
       margin-bottom: 50px; } }
 
+@media screen and (min-width: 1280px) {
+  .formulario {
+    padding-bottom: 20px; }
+  .agradecimiento {
+    padding-top: 40px;
+    padding-bottom: 20px; } }
+
 @media screen and (min-width: 1024px) {
   .formulario {
     padding-top: 350px; }
     .formulario h1 {
-      margin-bottom: 50px; } }
+      margin-bottom: 50px; }
+  .agradecimiento {
+    padding-bottom: 20px; } }
 
 @media screen and (min-width: 700px) {
   .formulario {
-    padding-top: 200px; }
+    padding-top: 150px; }
     .formulario h1 {
       margin-bottom: 50px; } }

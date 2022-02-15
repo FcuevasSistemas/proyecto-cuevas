@@ -122,7 +122,7 @@
     }
 }
 
-@media screen and (min-width: 1358px) {
+@media screen and (min-width: 1366px) {
     
     .nav_container {
         display: flex;
@@ -141,12 +141,26 @@
 
     .tecnologias {
         display: inline-block;
-        padding-top: 30px;
+        padding-top: 150px;
+        
     }
 
+    
+
     .divtecnologias {
-        padding-left: 510px;
+        padding-left: 440px;
+        
+        
     }
+}
+
+
+.hero_textos {
+    display: flex;
+    text-align: center;
+    padding-top: 250px;
+    padding-left: 10px;
+    flex-direction: column;
 }
 
 .item_footer H3 {
@@ -190,7 +204,7 @@
     }
 
     .tecnologias {
-        padding-left: 230px;
+        padding-left: 295px;
         padding-top: 550px;
     }
 
@@ -377,6 +391,24 @@
 }
 
 
+@media screen and (min-width: 1280px) {
+    .tecnologiascv {
+        padding-left: 470px;
+        padding-top: 300px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .tecnologiascv {
+        padding-left: 490px;
+        padding-top: 300px;
+
+            img {
+                width: 70px;
+            }
+    }
+}
+
 @media screen and (min-width: 1920px) {
     .tecnologiascv {
         padding-left: 735px;
@@ -481,7 +513,7 @@
     background: linear-gradient(180deg, #131516 0%, #000000 100%);
 
         .contacto-section {
-            height: 135vh;
+            height: 150vh;
         }
 }
 
@@ -493,7 +525,7 @@
     margin-right: auto;
 
         .logo {
-            padding-top: 10px;
+            padding-top: 50px;
             padding-bottom: 10px;
             text-align: center;
             font-size: 2.5em;
@@ -558,6 +590,7 @@
 .agradecimiento {
     color: #fff;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 /*MEDIA QUERY CONTACTO*/
@@ -574,6 +607,19 @@
 }
 
 
+@media screen and (min-width: 1280px) {
+
+
+        .formulario {
+            padding-bottom: 20px;
+        }
+    .agradecimiento {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+
 @media screen and (min-width: 1024px) {
 
     .formulario {
@@ -583,12 +629,15 @@
                 margin-bottom: 50px;
             }
     }
+                .agradecimiento {
+                    padding-bottom: 20px;
+                }
 }
 
 @media screen and (min-width: 700px) {
 
     .formulario {
-        padding-top: 200px;
+        padding-top: 150px;
 
             h1 {
                 margin-bottom: 50px;
