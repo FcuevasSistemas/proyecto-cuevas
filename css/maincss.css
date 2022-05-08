@@ -355,10 +355,17 @@
   .content-cabecera span {
     color: var(--gold1); }
   .content-cabecera img {
-    padding-top: 20px;
+    margin-top: 40px;
     margin-right: 20px;
     width: 150px; }
 
+    .container_card {
+      padding-top: 30px;
+    }
+
+    .content-logo img {
+      width: 200px;
+    }
 /*PROYECTOS*/
 .bodyproyecto {
   background: linear-gradient(180deg, #33353b 0%, #1a1b1f 100%);
