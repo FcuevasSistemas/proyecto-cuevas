@@ -13,7 +13,8 @@
     background-image: url("../imagenes/fondo6.jpg");
     background-size: cover;
     background-position: center;
-    height: 150vh;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -49,7 +50,10 @@
     padding-left: 10px;
     flex-direction: column;
     font-size: 12px;
+    width: 100%;
 }
+
+
 
 .tecnologias {
     display: inline-block;
@@ -119,6 +123,7 @@
 
     .hero_textos {
         padding-top: 900px;
+        width: auto;
     }
 }
 

@@ -55,10 +55,12 @@
   background-size: cover;
   background-position: center;
   height: 120vh; 
+  width: 100%;
 }
 
   body {
     min-height: 100vh;
+    width: 100%;
   }
 
 .title {
@@ -108,6 +110,13 @@
 @media screen and (min-width: 320px) {
   .tecnologias {
     display: none; } }
+
+    .indexsection{
+      width: 100%;
+    }
+.hero_textos {
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) {
   .nav_hero {
