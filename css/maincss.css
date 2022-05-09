@@ -52,7 +52,7 @@
 
 /* ******** INDEX SECTION ********* */
 .indexsection {
-  background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
+  background-image: url("../imagenes/fondo6.jpg");
   background-size: cover;
   background-position: center;
   height: 120vh;
