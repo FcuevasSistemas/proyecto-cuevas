@@ -43,7 +43,8 @@
 }
 
 .bodyindex {
-  min-height: 100vh;
+  min-height: 120vh;
+  
 }
 
 .navbar-toggler-icon {
@@ -51,16 +52,16 @@
 
 /* ******** INDEX SECTION ********* */
 .indexsection {
-  background-image: url("../imagenes/fondo6.jpg");
+  background: linear-gradient(180deg, #30353b 0%, #1a1b1f 100%);
   background-size: cover;
   background-position: center;
-  height: 120vh; 
-  width: 100%;
+  height: 120vh;
+  
 }
 
   body {
     min-height: 100vh;
-    width: 100%;
+    
   }
 
 .title {
@@ -107,12 +108,26 @@
     transition: .4s; }
 
 /* MEDIA QUERYS INDEX */
+@media screen and (min-width: 200px) {
+  .tecnologias {
+    display: none; } }
+
+    .indexsection{
+      
+      min-height: 100%;
+    }
+.hero_textos {
+  
+}
+
+
 @media screen and (min-width: 320px) {
   .tecnologias {
     display: none; } }
 
     .indexsection{
       width: 100%;
+      min-height: 100%;
     }
 .hero_textos {
   width: 100%;
